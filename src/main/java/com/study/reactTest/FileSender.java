@@ -61,7 +61,7 @@ class FileSender extends Thread {
 
 	public String receiveData(int buffer_size) throws IOException {
 		byte[] tmp = new byte[buffer_size];
-		int zz = bis.read(tmp);
+		int zz = bis.read(tmp);//zz는 읽은 크기
 		System.out.println("server : "+new String(tmp, 0, zz));
 		return new String(tmp, 0, zz);
 	}
@@ -83,7 +83,7 @@ class FileSender extends Thread {
 	public void run() {
 		try {
 			sendFileSize(filename);
-			//receiveData(100);// 수정 --------------
+			receiveData(100);// 수정 --------------
 			sendImage(fileSize);
 			result = receiveData(100);
 

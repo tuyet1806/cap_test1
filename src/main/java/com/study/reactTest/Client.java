@@ -19,8 +19,8 @@ public class Client {
 			System.out.println(serverIp + " : " + serverPort);
 
 			FileSender fileSender = new FileSender(socket, fileName);
-			fileSender.start();
-			fileSender.join();
+			fileSender.start();//run() 스레드
+			fileSender.join();//스레드 관련
 			result = fileSender.getResult();
 			System.out.println("result from server : " + result);
 		} catch (Exception e) {
