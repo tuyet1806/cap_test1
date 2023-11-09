@@ -83,9 +83,9 @@ class FileSender extends Thread {
 	public void run() {
 		try {
 			sendFileSize(filename);
-			receiveData(100);// 수정 --------------
+			receiveData(1000);// 수정 --------------
 			sendImage(fileSize);
-			result = receiveData(100);
+			result = receiveData(1000);
 
 		} catch (Exception e) {
 			e.printStackTrace();

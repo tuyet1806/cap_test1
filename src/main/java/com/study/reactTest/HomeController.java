@@ -73,8 +73,8 @@ public class HomeController {
 				js = "<script>alert('Result : "+result+"'); location.href='https://www.google.co.kr/search?q=" + result + "'</script>";
 			}
 
-			out.println(js);
-			out.flush();
+			//out.println(js);
+			//out.flush();
 
 		} catch(Exception e) {
 			e.printStackTrace();
