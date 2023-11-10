@@ -56,7 +56,7 @@ public class HomeController {
 		String fileName = handlerFile.getFileFullPath();//-----------------
 		System.out.println("파일이름 :"+fileName);
 		System.out.println("컨트롤러3");
-		Client client = new Client(fileName);//이게 안됌
+		Client client = new Client(fileName);
 		System.out.println("컨트롤러4");
 		String result = client.getResult();
 		String js;
