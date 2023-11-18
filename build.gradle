@@ -24,6 +24,10 @@ dependencies {
 
 	// https://mvnrepository.com/artifact/jakarta.servlet/jakarta.servlet-api
 	compileOnly group: 'jakarta.servlet', name: 'jakarta.servlet-api', version: '6.0.0'
+// https://mvnrepository.com/artifact/commons-io/commons-io 소켓 톻신을 위해 추가 10-15
+	implementation group: 'commons-io', name: 'commons-io', version: '2.11.0'
+// https://mvnrepository.com/artifact/org.slf4j/slf4j-api//소켓 통신 우이해 10월 15일
+	implementation group: 'org.slf4j', name: 'slf4j-api', version: '2.0.9'
 
 }
 

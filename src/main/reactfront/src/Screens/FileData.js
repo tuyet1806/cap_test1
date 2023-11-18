@@ -16,7 +16,7 @@ function FileData() {
     Object.values(file).forEach((file) => fd.append("file", file));
 
 
-    axios.post('/test/AxiosFileTest.do', fd, {
+    axios.post('/upload.do', fd, {
       headers: {
         "Content-Type": `multipart/form-data; `,
       },
@@ -39,7 +39,7 @@ function FileData() {
 
 
             <div>
-                <button onClick={()=> Send()}>Send</button>
+                <button onClick={()=> Send()}>Send1</button>
             </div>
         </div>
     );
