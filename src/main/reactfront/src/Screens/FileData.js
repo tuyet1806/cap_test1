@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 
+
+
 function FileData() {
   const [file, setFile] = useState(null);	//파일
 
@@ -20,7 +22,10 @@ function FileData() {
       headers: {
         "Content-Type": `multipart/form-data; `,
       },
-      baseURL: 'http://localhost:8080'
+     // baseURL: 'http://localhost:8080'
+     baseURL: 'http://13.209.22.163:8080'
+
+
     })
     .then((response) => {
 

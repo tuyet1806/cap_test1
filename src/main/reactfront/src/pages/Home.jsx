@@ -64,7 +64,7 @@ function Home() {
   return (
     <Wrapper>
      <Styledlogo img src={logo} alt=" "/>
-      <StyledButtonL title="로그인" onClick={()=>{navigate("login");}}>Login</StyledButtonL>
+      <StyledButtonL title="로그인" onClick={()=>{navigate("login");}}>Login1</StyledButtonL>
       <StyledButtonS title="회원가입" onClick={()=>{navigate("FileData");}}>Signup</StyledButtonS>
     </Wrapper>
   )
